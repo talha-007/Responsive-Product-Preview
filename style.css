@@ -1,0 +1,180 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: hsl(30, 38%, 92%);
+    height: 100vh;
+    width: 100%;
+}
+p{
+    font-size: 14px;
+    color: #555454;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 15px 0px;
+    font-weight: 500;
+}
+
+section{
+    width: 600px;
+    height: 480px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+section .image_1{
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size:cover;
+    border-radius: 10px 0px 0px 10px;
+} 
+
+section .content{
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+section .content .p_1{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-top: 30px;
+
+}
+section .content .heading{
+    font-size: 2.5rem;
+    width: 80%;
+    font-family: 'Fraunces', serif;
+}
+
+section .content .p_2{
+    width: 75%;
+}
+section .price{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+section .price .Price_1{
+    font-family:'Fraunces', serif;
+    color: #3c8067;
+    font-size: 2rem;
+}
+section .price .Price_2{
+    padding-left: 30px;
+    text-decoration-line: line-through;
+    text-decoration-color: #555454;
+}
+section .btn{
+    padding: 13px 90px;
+    border: none;
+    border-radius: 5px;
+    background: #3c8067;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+section .btn:hover{
+    background: #2b5c4a;
+    cursor: pointer;
+}
+section .btn img{
+    padding-right: 10px;
+ 
+}
+.attribution{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-size: 10px;
+}
+
+
+@media(max-width: 375px) {
+    
+
+section{
+    width: 350px;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+section .image_1{
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+}  
+section .content{
+    position: relative;
+    padding-top: 240px;
+    padding-left: 25px;
+}
+
+section .content .p_1{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-top: 30px;
+
+}
+section .content .heading{
+    font-size: 2rem;
+    width: 100%;
+    font-family: 'Fraunces', serif;
+    padding-bottom: 10px;
+}
+section .content .p_2{
+    width: 97%;
+}
+section .price{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+section .price .Price_1{
+    font-family:'Fraunces', serif;
+    color: #3c8067;
+    font-size: 2rem;
+}
+section .price .Price_2{
+    padding-left: 30px;
+    text-decoration-line: line-through;
+    text-decoration-color: #555454;
+}
+section .btn{
+    padding: 13px 90px;
+    border: none;
+    border-radius: 5px;
+    background: #3c8067;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+section .btn:hover{
+    background: #2b5c4a;
+    cursor: pointer;
+}
+section .btn img{
+    padding-right: 10px;
+}
+.attribution{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 10px;
+}
+}
